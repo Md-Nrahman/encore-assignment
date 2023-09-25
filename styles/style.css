@@ -1,0 +1,233 @@
+.main-body {
+  background: url(../assets/blue-sky.png) no-repeat center center fixed;
+}
+
+.red-rectangle {
+  background-color: red;
+  height: 3rem;
+  width: 18rem;
+  margin: 2rem auto;
+}
+
+.cloud-container {
+  margin: 1rem auto;
+  position: relative;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* height: 100%; */
+}
+
+.cloud {
+  margin: 5rem auto;
+  display: block;
+}
+
+.cloud-image {
+  width: 700px;
+  display: block;
+  margin: 0 auto;
+}
+
+.inner-cloud {
+  width: 500px;
+  animation: cloud 10s linear infinite;
+  position: absolute;
+  top: 180px;
+}
+
+.inner-cloud-image {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.circle1 {
+  position: absolute;
+  background-color: red;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  bottom: 128px;
+  left: 168px;
+}
+
+.circle2 {
+  position: absolute;
+  background-color: red;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  top: 195px;
+  left: 228px;
+}
+
+.circle3 {
+  position: absolute;
+  background-color: red;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  bottom: 172px;
+  left: 334px;
+}
+
+.circle4 {
+  position: absolute;
+  background-color: red;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  top: 202px;
+  right: 235px;
+}
+
+.circle5 {
+  position: absolute;
+  background-color: red;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  bottom: 132px;
+  right: 166px;
+}
+
+.bottom-text {
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.rounded-rectangle {
+  position: relative;
+}
+
+.rounded-rectangle-image {
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.btn-orange {
+  background-color: #ff6600;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.left-50 {
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.upper-part-of-cloud {
+  top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.orange-leaf {
+  display: none;
+}
+
+.mobile-text {
+  display: none;
+}
+
+@media (max-width: 812px) {
+  .cloud-image {
+    display: none;
+  }
+  .inner-cloud-image {
+    transform: rotate(-90deg);
+  }
+  .cloud {
+    height: 400px;
+  }
+
+  .circle1 {
+    bottom: 360px;
+    left: 240px;
+  }
+
+  .circle2 {
+    top: 150px;
+    left: 135px;
+  }
+
+  .circle3 {
+    bottom: 180px;
+    left: 205px;
+  }
+
+  .circle4 {
+    top: 365px;
+    right: 250px;
+  }
+
+  .circle5 {
+    bottom: 10px;
+    right: 130px;
+  }
+
+  .cloud-container {
+    width: 500px;
+  }
+
+  .orange-leaf {
+    display: block;
+    position: absolute;
+    top: 70px;
+    right: 150px;
+    width: 40px;
+    transform: rotate(45deg);
+  }
+
+  .mobile-text {
+    display: block;
+    color: white;
+    font-size: 1.2rem;
+    position: absolute;
+    top: -100px;
+    left: 170px;
+  }
+}
